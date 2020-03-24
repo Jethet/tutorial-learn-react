@@ -1,17 +1,23 @@
-import React from 'react';
+import React from "react";
+
+class Greetings extends React.Component {
+  render() {
+    return (
+      <>
+        <h1>Hello and welcome!</h1>
+        <p>Learn React</p>
+      </>
+    );
+  }
+}
 
 class App extends React.Component {
   render() {
     return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-          Learn React
-      </header>
-    </div>
-  );
+      <> 
+      <Greetings />
+      </>
+    )
   }
 }
 
