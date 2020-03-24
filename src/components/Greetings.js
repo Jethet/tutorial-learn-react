@@ -1,14 +1,13 @@
 import React from "react";
 
-class Greetings extends React.Component {
-  render() {
-    return (
-      <>
-        <h1>{this.props.title}</h1>
-        <p>{this.props.message}</p>
-      </>
-    );
-  }
-}
+const Greetings = props => {
+  const { title, message } = props;
+  return (
+    <>
+      <h1>{title}</h1>
+      <p>{message}</p>
+    </>
+  );
+};
 
 export default Greetings;

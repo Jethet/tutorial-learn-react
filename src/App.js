@@ -3,25 +3,21 @@ import Greetings from "./components/Greetings";
 import Counter from "./components/Counter";
 
 class App extends React.Component {
-  constructor() {
-    super();
-    this.increaseCount = this.increaseCount.bind(this);
-  }
   state = {
     count: 0
   };
 
-  increaseCount() {
+  increaseCount = () => {
     this.setState({ count: this.state.count + 1 });
-  }
+  };
 
-  decreaseCount() {
-    console.log("Decrease count");
-  }
+  decreaseCount = () => {
+    this.setState({ count: this.state.count - 1 });
+  };
 
-  resetCount() {
-    console.log("Reset count");
-  }
+  resetCount = () => {
+    this.setState({ count: 0 });
+  };
 
   render() {
     return (
